@@ -1,0 +1,19 @@
+CC = clang
+OBJ = ush.o argparse.o builtin.o
+
+ush: $(OBJ)
+	$(CC) -o ush $(OBJ)
+
+ush.o: ush.c argparse.h builtin.h
+	$(CC) -c ush.c
+
+argparse.o: argparse.c argparse.h 
+	$(CC) -c argparse.c
+
+builtin.o: builtin.c builtin.h
+	$(CC) -c builtin.c
+
+.PHONY: clean
+
+clean:
+	rm $(OBJ)
