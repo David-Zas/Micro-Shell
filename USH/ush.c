@@ -1,7 +1,3 @@
-/* CS 347 -- Mini Shell!  
- * Original author Phil Nelson 2000
- * Modified by Aran Clauson 2019
- */
 #include <assert.h>
 #include <stdio.h>
 #include <string.h>
